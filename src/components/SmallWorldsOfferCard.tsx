@@ -247,6 +247,7 @@ export function SmallWorldsOfferCard({
               alt={imageAlt}
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
               className="h-full w-full object-cover transition-transform duration-300 group-hover/offer:scale-[1.02]"
             />
             {/* Scrim Overlay with Information Tags */}
@@ -434,6 +435,7 @@ export function SmallWorldsOfferCard({
                         alt=""
                         loading="lazy"
                         decoding="async"
+                        fetchPriority="low"
                         className="h-8 w-8 shrink-0 rounded-lg object-cover border border-border/70 shadow-2xs"
                       />
                     ) : (
