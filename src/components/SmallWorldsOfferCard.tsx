@@ -524,25 +524,25 @@ export function SmallWorldsOfferCard({
       </div>
 
       {/* Card Footer / Call to Action with Safe Mobile Bottom Padding & Anti-Clipping Badges */}
-      <div className="border-t border-border/70 bg-card p-4 pb-6 sm:p-5 sm:pb-7">
+      <div className="border-t border-border/70 bg-card p-3 pb-4 sm:p-5 sm:pb-6">
         <Button
           type="button"
           size="lg"
           variant={isMax ? "default" : "outline"}
           onClick={onDetails}
           className={cn(
-            "w-full rounded-2xl text-sm font-extrabold shadow-sm transition-all duration-200 hover:-translate-y-0.5 cursor-pointer",
+            "h-auto min-h-12 w-full gap-1.5 rounded-2xl px-3 py-2.5 text-sm font-extrabold leading-snug shadow-sm transition-all duration-200 hover:-translate-y-0.5 cursor-pointer",
             isMax
-              ? "h-12 bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25"
-              : "h-12 border-2 border-primary/40 text-primary hover:bg-secondary/20",
+              ? "bg-primary text-primary-foreground hover:bg-primary/90 shadow-primary/25"
+              : "border-2 border-primary/40 text-primary hover:bg-secondary/20",
           )}
         >
-          {buttonLabel}
-          <ArrowRight className="ml-1 h-4 w-4 shrink-0" aria-hidden="true" />
+          <span className="min-w-0 flex-1 whitespace-normal text-center">{buttonLabel}</span>
+          <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
         </Button>
 
         {/* Clean, Non-Clipping Badges on Mobile */}
-        <div className="mt-3 flex flex-wrap items-center justify-center gap-2 text-center text-[11px] font-semibold text-muted-foreground">
+        <div className="mt-2.5 flex flex-wrap items-center justify-center gap-2 text-center text-[11px] font-semibold text-muted-foreground">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-muted/70 px-2.5 py-1 whitespace-nowrap">
             <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-success" aria-hidden="true" />
             Garantia de 7 dias
