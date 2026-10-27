@@ -605,6 +605,7 @@ export default function SmallWorldsLanding() {
                             src={scenario.image}
                             alt={copy === 0 ? scenario.alt : ""}
                             loading="lazy"
+                            decoding="async"
                             draggable={false}
                             className="pointer-events-none aspect-[5/4] w-full select-none object-cover"
                           />
@@ -635,6 +636,7 @@ export default function SmallWorldsLanding() {
                   src={familyPlayImage}
                   alt="Família brincando junta com cenários tridimensionais de papel montados em casa"
                   loading="lazy"
+                  decoding="async"
                   className="block h-auto w-full rounded-[1.4rem] border border-primary/15 object-contain sm:rounded-[1.6rem]"
                 />
               </div>
@@ -777,6 +779,7 @@ export default function SmallWorldsLanding() {
                       src={image}
                       alt={imageAlt}
                       loading="lazy"
+                      decoding="async"
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -920,6 +923,7 @@ export default function SmallWorldsLanding() {
                   src={bonus.image}
                   alt={bonus.alt}
                   loading="lazy"
+                  decoding="async"
                   className="aspect-[4/3] w-full object-cover"
                 />
                 <div className="p-5 sm:p-6">

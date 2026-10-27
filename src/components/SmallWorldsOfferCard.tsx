@@ -433,6 +433,7 @@ export function SmallWorldsOfferCard({
                         src={bonus.image}
                         alt=""
                         loading="lazy"
+                        decoding="async"
                         className="h-8 w-8 shrink-0 rounded-lg object-cover border border-border/70 shadow-2xs"
                       />
                     ) : (
