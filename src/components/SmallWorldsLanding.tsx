@@ -548,6 +548,8 @@ export default function SmallWorldsLanding() {
               <img
                 src={heroImage}
                 alt="Cenários de papel de floresta, dinossauros, castelo e fazenda montados sobre uma mesa"
+                fetchPriority="high"
+                decoding="async"
                 className="aspect-[4/3] sm:aspect-square w-full rounded-[1.35rem] object-cover sm:rounded-[1.5rem]"
               />
             </div>
