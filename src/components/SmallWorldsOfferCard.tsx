@@ -195,7 +195,7 @@ export function SmallWorldsOfferCard({
       : "Cenários iniciais para começar a brincadeira");
   const buttonLabel =
     ctaText ??
-    (isMax ? "Garantir o Kit Max com 5 Bônus" : "Quero apenas o Kit Essencial (3 cenários)");
+    (isMax ? "Garantir o Kit Max com 5 Bônus" : "Quero apenas o Kit Essencial");
 
   return (
     <article
